@@ -1,0 +1,37 @@
+extends core/base.pug
+
+block title 
+  title О нас
+
+block content
+
+  .eiv-page 
+
+    .eiv-content 
+
+      // eiv-about
+      .eiv-about
+        .eiv-wrapper 
+          .eiv-about__word 
+            h1 СМИ о нас
+            p Оперативно запустив массовое производство труб ПНД в СПб с самого начала их появления на российском рынке, трубный завод ЭНЕРГОПЛАСТ сумел вырваться на лидирующие позиции, предлагая большой ассортимент изделий по адекватной, доступной цене. За период своего существования нашей компании удалось заслужить лояльность корпоративных клиентов разного уровня, создавая продукцию, способную конкурировать с аналогичными товарами известных отечественных и зарубежных брендов.
+          .eiv-row 
+            .eiv-about__col 
+              mixin about-card()
+                a(href="#").eiv-about__card 
+                  .eiv-about__img 
+                    img(src="img/img-about.jpg", alt="")
+                  .eiv-about__title «ЭНЕРГОПЛАСТ развивает отечественное производство»
+                  .eiv-about__text Журнал «Строительная Орбита» № 05 (232) 2023 г.
+              +about-card
+            .eiv-about__col 
+              +about-card
+            .eiv-about__col 
+              +about-card
+            .eiv-about__col 
+              +about-card
+            .eiv-about__col 
+              +about-card
+            .eiv-about__col 
+              +about-card
+      // /eiv-about

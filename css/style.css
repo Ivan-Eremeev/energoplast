@@ -1,0 +1,248 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button,
+input,
+a,
+textarea {
+  outline: none;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* /reset */
+/* open-sans-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v36-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v36-cyrillic_latin-regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* open-sans-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v36-cyrillic_latin-700.woff2") format("woff2"), url("../fonts/open-sans-v36-cyrillic_latin-700.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* settings */
+@media (max-width: 500px) {
+  .eiv-mobile-hide {
+    display: none !important;
+  }
+}
+
+@media (min-width: 501px) {
+  .eiv-mobile-visible {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .eiv-tablet-hide {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .eiv-tablet-visible {
+    display: none !important;
+  }
+}
+
+.eiv-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.eiv-row > * {
+  word-wrap: break-word;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+
+.eiv-wrapper {
+  width: 100%;
+  max-width: 1330px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 768px) {
+  .eiv-wrapper {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .eiv-wrapper {
+    padding-right: 15px;
+  }
+}
+
+.eiv-page {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.eiv-content {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.eiv-navpage {
+  padding: 100px 0;
+  font-family: "Open Sans";
+}
+.eiv-navpage h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.eiv-navpage ul {
+  font-size: 18px;
+}
+.eiv-navpage ul li {
+  margin: 10px 0;
+}
+
+/* /settings */
+/* eiv-about */
+.eiv-about {
+  padding: 20px 0 60px;
+  font-family: "Open Sans";
+  color: #2D3940;
+}
+.eiv-about__word {
+  max-width: 900px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.eiv-about__word h1, .eiv-about__word h2, .eiv-about__word h3, .eiv-about__word h4, .eiv-about__word h5, .eiv-about__word h6 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.eiv-about__word p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.eiv-about__word p:last-child {
+  margin-bottom: 0;
+}
+.eiv-about .eiv-row {
+  margin-top: -40px;
+}
+.eiv-about .eiv-row > * {
+  margin-top: 40px;
+}
+.eiv-about__col {
+  width: 25%;
+}
+.eiv-about__card {
+  display: block;
+  height: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2D3940;
+  text-decoration: none;
+}
+.eiv-about__card:hover .eiv-about__title {
+  color: #E33434;
+}
+.eiv-about__img {
+  height: 430px;
+  margin-bottom: 15px;
+}
+.eiv-about__img img {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.eiv-about__title {
+  font-weight: 700;
+  margin-bottom: 5px;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.eiv-about__text {
+  font-weight: 400;
+}
+
+/* /eiv-about */
