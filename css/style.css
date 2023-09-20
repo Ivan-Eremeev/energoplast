@@ -238,6 +238,11 @@ h1, h2, h3 {
 .eiv-about__card:hover .eiv-about__title {
   color: #E33434;
 }
+@media (min-width: 501px) {
+  .eiv-about__card:hover .eiv-about__btn {
+    opacity: 1;
+  }
+}
 .eiv-about__img {
   margin-bottom: 15px;
   position: relative;
@@ -266,6 +271,29 @@ h1, h2, h3 {
 }
 .eiv-about__text {
   font-weight: 400;
+}
+.eiv-about__btn {
+  width: 100%;
+  max-width: 90%;
+  padding: 15px;
+  background-color: #E33434;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 @media (max-width: 500px) {
   .eiv-about {

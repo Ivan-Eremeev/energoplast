@@ -46,6 +46,11 @@
       .eiv-about__title {
         color: $primary_color;
       }
+      @media (min-width: $break_xs + 1) {
+        .eiv-about__btn {
+          opacity: 1;
+        }
+      }
     }
   }
   &__img {
@@ -73,6 +78,25 @@
   }
   &__text {
     font-weight: 400;
+  }
+  &__btn {
+    width: 100%;
+    max-width: 90%;
+    padding: 15px;
+    background-color: $primary_color;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    transition: 0.1s;
   }
   @media (max-width: $break_sm) {
     
